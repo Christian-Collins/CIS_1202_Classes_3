@@ -12,27 +12,29 @@ int main()
 {
 	string manufacturer;
 	int year, doors, towCap;
-	cout << "";
-	cout << "";
-	cout << ""; 
+	cout << "Vehicle Program\n\n";
+	cout << "Vehicle:\n";
+	cout << "Enter the manufacturer: "; 
 	getline(cin, manufacturer);
-	cout << "";
+	cout << "Enter the year built: ";
 	cin >> year;
 	Vehicle vehicle1(manufacturer, year);
 
-	cout << "\n\n";
+	cout << "\n\nCar:\n";
+	cout << "Enter the manufacturer: ";
 	getline(cin, manufacturer);
-	cout << "";
+	cout << "Enter the year built: ";
 	cin >> year;
-	cout << "";
+	cout << "Enter the number of doors: ";
 	cin >> doors;
 	Car car1(doors, manufacturer, year);
 
-	cout << "";
+	cout << "Truck:\n";
+	cout << "Enter the manufacturer: ";
 	getline(cin, manufacturer);
-	cout << "";
+	cout << "Enter the year built: ";
 	cin >> year;
-	cout << "";
+	cout << "Enter the towing capacity: ";
 	cin >> towCap;
 	Car car1(towCap, manufacturer, year);
 }
