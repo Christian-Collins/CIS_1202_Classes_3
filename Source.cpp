@@ -19,23 +19,29 @@ int main()
 	cout << "Enter the year built: ";
 	cin >> year;
 	Vehicle vehicle1(manufacturer, year);
+	vehicle1.displayInfo();
 
 	cout << "\n\nCar:\n";
 	cout << "Enter the manufacturer: ";
+	cin.ignore();
 	getline(cin, manufacturer);
 	cout << "Enter the year built: ";
 	cin >> year;
 	cout << "Enter the number of doors: ";
 	cin >> doors;
 	Car car1(doors, manufacturer, year);
+	car1.displayInfo();
 
 	cout << "Truck:\n";
 	cout << "Enter the manufacturer: ";
+	cin.ignore();
 	getline(cin, manufacturer);
 	cout << "Enter the year built: ";
 	cin >> year;
 	cout << "Enter the towing capacity: ";
 	cin >> towCap;
-	Car car1(towCap, manufacturer, year);
+	Truck truck1(towCap, manufacturer, year);
+	truck1.displayInfo();
+	return(0);
 }
 
